@@ -37,3 +37,5 @@ var friends = [
   /// for more: http://clipart-library.com/cartoon-animal-images.html
 
 ];
+
+module.exports = friends;

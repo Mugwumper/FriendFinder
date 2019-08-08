@@ -10,8 +10,13 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
-
+<style>
+    body {
+       margin: 10px;
+    }
+</style>
 <body>
+    <h1>Survey</h1>
 
     <div class="container">
 
@@ -28,110 +33,110 @@
 				<label for="q1">You are always scheming.</label>
 				<select class="form-control" id="q1">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="q2">You are high on the food chain.</label>
 				<select class="form-control" id="q2">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="q3">I think very highly of myself.</label>
 				<select class="form-control" id="q3">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="q4">You think yourself clever.</label>
 				<select class="form-control" id="q4">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="q5">I search the ground for food.</label>
 				<select class="form-control" id="q5">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="q6">I've been known to frolic.</label>
 				<select class="form-control" id="q6">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="q7">I don't stray from the heard.</label>
 				<select class="form-control" id="q7">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="q8">I am constantly cleaning myself.</label>
 				<select class="form-control" id="q8">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="q9">I'm told I'm delicious</label>
 				<select class="form-control" id="q9">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 			<div class="form-group">
 				<label for="q10">I am sneaky.</label>
 				<select class="form-control" id="q10">
 					<option value="empty"></option>
-					<option value="1">1</option>
+					<option value="1">1 (Strongly Disagree)</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
 					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="5">5 (Strongly Agree)</option>
 				</select>
 			</div>
 		</form>
@@ -139,4 +144,84 @@
 			<button id="btnSubmit" type="submit" class="btn btn-success btn-lg">Submit</button>
 		</div>
     </div>
+
+    	<!-- Modal -->
+	<div class="modal fade" id="resultsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"></button>
+              <h2 class="modal-title" id="bestFriend">Match Found! Meet your new friend.</h2>
+            </div>
+            <div class="modal-body" id="friendInfo">
+                      <h3 id="friendName"></h3>
+                      <img id="friendImg" src="" alt="Photo of your new friend.">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script type="text/javascript">
+		$(document).ready(function() {
+
+			$('.Modal').modal({
+				dismissible: false, // Modal can be dismissed by clicking outside of the modal
+				opacity: .5, // Opacity of modal background
+				inDuration: 500, // Transition in duration
+				outDuration: 900, // Transition out duration
+				startingTop: '3%', // Starting top style attribute
+				endingTop: '15%' // Ending top style attribute
+			});
+		});
+
+		// Activate submit button
+		$('#btnSubmit').on('click', function(event) {
+			event.preventDefault();
+            console.log("btnSubmit clicked")
+			// Gather user inputs
+			var newFriend = {
+				name: $('#name').val().trim(),
+				photo: $('#photo').val().trim(),
+				scores:[
+					$('#q1').val().trim(),
+					$('#q2').val().trim(),
+					$('#q3').val().trim(),
+					$('#q4').val().trim(),
+					$('#q5').val().trim(),
+					$('#q6').val().trim(),
+					$('#q7').val().trim(),
+					$('#q8').val().trim(),
+					$('#q9').val().trim(),
+					$('#q10').val().trim()
+				]
+			};
+
+            // var newFriend = 
+            // {
+            //     name:"Alfonsos Friend",
+            //     photo:"http://clipart-library.com/images/ki8nKEdbT.png",
+            //     scores:[ 5, 1, 4, 4, 5, 2, 2, 5, 4, 1]
+            // }   
+
+		    console.log('newFriend = ' + JSON.stringify(newFriend));
+
+			// Add user inputs to friends list
+			$.post('/api/friends', newFriend, function(data){
+      			console.log('response = ' + JSON.stringify(data));
+
+      			// Set the name and image values of friend match
+      			$('#friendName').html(data.name);
+		    	$("#friendImg").attr("src", data.photo);
+
+		    	// Pop open the modal dialog
+      		    $('#resultsModal').modal('toggle');
+      		});
+		});
+	</script>
+
+
 </body>

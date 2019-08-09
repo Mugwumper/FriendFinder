@@ -10,7 +10,7 @@ var htmlRoutes = require('./app/routing/htmlRoutes.js');
 var app = express();
 
 // set the port, default to 8080 if no environment variable found.
-var PORT = process.env.PORT || 8081;
+var PORT = process.env.PORT || 8080;
 
 // set up Express 
 app.use(bodyParser.json());
